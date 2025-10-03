@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Site</title>
+<meta name="description" content="Short description of the page.">
+<meta property="og:title" content="Your Site"><meta property="og:description" content="Short description."><meta property="og:image" content="images/preview.jpg"><meta property="og:type" content="website"><meta property="og:url" content="https://example.com">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--max:72ch;--pad:clamp(1rem,2.5vw,2rem);--fg:#111;--bg:#fff;--muted:#666;--accent:#0a66c2;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--fg:#e5e5e5;--bg:#0b0b0b;--muted:#9aa0a6;--accent:#7cb0ff}}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--fg);background:var(--bg)}
+a{color:var(--accent);text-decoration-thickness:.08em;text-underline-offset:.2em}
+.container{width:min(100% - 2*var(--pad),var(--max));margin-inline:auto}
+header,section,footer{padding-block:clamp(1.5rem,4vw,4rem)}
+h1{font-size:clamp(1.75rem,4vw,3rem);line-height:1.15;margin:0 0 .5rem}
+h2{font-size:clamp(1.25rem,3vw,2rem);line-height:1.2;margin:0 0 1rem}
+p{margin:.5rem 0 1rem}
+img{max-width:100%;height:auto;display:block;border-radius:.5rem}
+figure{margin:0}figcaption{font-size:.9rem;color:var(--muted);margin-top:.25rem}
+.grid{display:grid;gap:var(--pad)}.grid-2{grid-template-columns:1fr}@media(min-width:48rem){.grid-2{grid-template-columns:1fr 1fr}}
+footer{font-size:.9rem;color:var(--muted);border-top:1px solid #0001}
+</style>
+</head>
+<body>
+<header><div class="container">
+  <h1>Your Site</h1>
+  <p>Short tagline explaining what this page is.</p>
+</div></header>
+
+<main>
+<section><div class="container">
+  <picture>
+    <source type="image/avif" srcset="images/hero.avif">
+    <source type="image/webp" srcset="images/hero.webp">
+    <img src="images/hero.jpg" alt="Hero image description" width="1600" height="900">
+  </picture>
+</div></section>
+
+<section><div class="container grid grid-2">
+  <div><h2>Section One</h2><p>Brief paragraph about your work or project. Keep lines comfortable to read.</p></div>
+  <figure>
+    <img src="images/feature-800.jpg" srcset="images/feature-800.jpg 800w, images/feature-1600.jpg 1600w" sizes="(min-width:48rem) 50vw, 100vw" alt="Descriptive alt text" loading="lazy" width="1600" height="900">
+    <figcaption>Optional caption.</figcaption>
+  </figure>
+</div></section>
+
+<section><div class="container">
+  <h2>Section Two</h2>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))">
+    <img src="images/p1.jpg" alt="Item 1" loading="lazy" width="800" height="600">
+    <img src="images/p2.jpg" alt="Item 2" loading="lazy" width="800" height="600">
+    <img src="images/p3.jpg" alt="Item 3" loading="lazy" width="800" height="600">
+  </div>
+</div></section>
+</main>
+
+<footer><div class="container">© 2025 Your Name</div></footer>
+</body>
+</html>
